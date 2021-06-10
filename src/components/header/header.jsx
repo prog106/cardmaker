@@ -1,8 +1,11 @@
 import React from 'react';
+import styles from './header.module.css';
 
 const Header = (props) => {
   return (
-    <h1>Header</h1>
+    <header className={styles.header}>
+      <span className={styles.title}>Business Card Maker</span>
+    </header>
   );
 }
 

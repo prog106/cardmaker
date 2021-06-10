@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../footer/footer';
 import Header from '../header/header';
+import styles from './login.module.css';
 
 const Login = ({ authService }) => {
   const handleLogin = (event) => {
@@ -9,7 +10,7 @@ const Login = ({ authService }) => {
     .then(console.log);
   }
   return (
-    <section>
+    <section className={styles.wrap}>
       <Header />
       <section>
         <h1>Login</h1>
