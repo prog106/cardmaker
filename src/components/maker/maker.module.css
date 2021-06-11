@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.maker {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+.preview {
+    padding: 0 20px;
+    border-top: 1px solid #efefef;
+    border-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+    .maker {
+        flex-basis: 50%;
+        border-right: 1px solid #efefef;
+    }
+    .preview {
+        flex-basis: 50%;
+        border-top: 0px;
+    }
+}

@@ -1,13 +1,26 @@
 .header {
-  border-bottom: 1px solid #eee;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: blueviolet;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    position: relative;
 }
 .title {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.logout {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid;
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+    /* border: none; */
+    color: #efefef;
+    cursor: pointer;
+    border-radius: 5px;
 }
