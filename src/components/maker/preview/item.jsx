@@ -16,7 +16,7 @@ const Item = ({ item }) => {
         }
     }
     return (
-        <li className={`${styles.card} ${getStyles(item.theme)}`}>
+        <li key={item.id} className={`${styles.card} ${getStyles(item.theme)}`}>
             <img
                 src={item.fileURL || DEFAULT_PROFILE}
                 alt=""

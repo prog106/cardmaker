@@ -11,10 +11,8 @@
 }
 .preview {
     padding: 0 20px;
-    border-top: 1px solid #efefef;
     border-left: 0px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }

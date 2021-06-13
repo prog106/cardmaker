@@ -1,15 +1,22 @@
 import React from "react";
-import styles from "./editor.module.css";
-import Item from "./item";
+import Add from "./add";
+// import styles from "./editor.module.css";
+import Card from "./card";
 
-const Editor = ({ cards, onDelete }) => {
+const Editor = ({ ImageInput, cards, onDelete, onModify, onAdd }) => {
     return (
         <>
             <h1>Card Maker</h1>
             <ul>
-                {cards.map((item) => (
-                    <Item item={item} onDelete={onDelete} />
+                {cards.map((card) => (
+                    <Card
+                        ImageInput={ImageInput}
+                        card={card}
+                        onDelete={onDelete}
+                        onModify={onModify}
+                    />
                 ))}
+                {<Add ImageInput={ImageInput} onAdd={onAdd} />}
             </ul>
         </>
     );
