@@ -70,10 +70,9 @@ const Card = ({ ImageInput, card, onDelete, onModify }) => {
             <textarea
                 className={styles.textarea}
                 name="message"
+                value={inputs.message}
                 onChange={onChange}
-            >
-                {inputs.message}
-            </textarea>
+            ></textarea>
             <div className={styles.fileinput}>
                 <ImageInput
                     onProfile={handleProfile}

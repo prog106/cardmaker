@@ -10,6 +10,7 @@ const Editor = ({ ImageInput, cards, onDelete, onModify, onAdd }) => {
             <ul>
                 {cards.map((card) => (
                     <Card
+                        key={card.id}
                         ImageInput={ImageInput}
                         card={card}
                         onDelete={onDelete}
